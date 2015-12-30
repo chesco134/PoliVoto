@@ -7,6 +7,7 @@ package com.polivoto.main;
 
 import com.polivoto.vistas.Acceso;
 import com.polivoto.vistas.AnalistaD;
+import com.polivoto.vistas.Consultor;
 
 /**
  *
@@ -27,5 +28,10 @@ public class BackBone {
     public void iniciarAnalista(){
         AnalistaD analista = new AnalistaD(this);
         analista.iniciar();
+    }
+    
+    public void iniciarConsultor(){
+        Consultor consultor = new Consultor(this);
+        consultor.iniciar();
     }
 }
