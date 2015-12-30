@@ -5,16 +5,20 @@
  */
 package com.polivoto.vistas;
 
+import com.polivoto.main.BackBone;
+
 /**
  *
  * @author azaraf
  */
 public class Consultor extends javax.swing.JFrame {
+    private final BackBone padre;
 
     /**
      * Creates new form Consultor
      */
-    public Consultor() {
+    public Consultor(BackBone padre) {
+        this.padre = padre;
         initComponents();
     }
 
@@ -179,7 +183,7 @@ public class Consultor extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
-            new Consultor().setVisible(true);
+            setVisible(true);
         });
     }
 
